@@ -15,7 +15,9 @@ button.forEach((element) => {
     } else if (e.target.textContent === "+/-") {
       input.innerText = eval(input.innerText * -1);
     } else if (e.target.textContent === "=") {
-      input.textContent = eval(input.textContent.replace(/x/g, "*"));
+      input.textContent = eval(
+        input.textContent.replace(/x/g, "*").replace(/÷/g, "/")
+      );
     } else if (input.innerText == 0 && e.target.textContent == 0) {
       input.textContent = 0;
     } else if (input.innerText == 0 && e.target.textContent !== 0) {
