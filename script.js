@@ -4,10 +4,12 @@ input.innerText = 0;
 
 button.forEach((element) => {
   element.addEventListener("click", (e) => {
-    console.log(e.target.textContent);
     if (e.target.textContent === "AC") {
-      input.textContent = "\u00A0";
-    } else if (e.target.textContent === "%") {
+      input.textContent = "0";
+    } else if (e.target.textContent === "C") {
+      input.textContent = "0";
+      ac.innerText = "AC";
+    }  else if (e.target.textContent === "%") {
       input.innerText = eval(input.innerText * 0.01);
     } else if (e.target.textContent === "+/-") {
       input.innerText = eval(input.innerText * -1);
