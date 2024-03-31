@@ -1,5 +1,6 @@
 let input = document.getElementById("input");
 let button = document.querySelectorAll("button");
+let ac = document.getElementById("ac");
 input.innerText = 0;
 
 button.forEach((element) => {
