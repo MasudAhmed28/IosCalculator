@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+button {
+  margin: 10px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background: #383737;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  outline: none;
+}
+.zero {
+  width: 164px;
+  height: 70px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 35px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+.yellow {
+  background: orange;
+}
+.white {
+  background: rgba(255, 255, 255, 0.818);
+  color: black;
+}
+
+.cal {
+  height: 550px;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#input {
+  color: aliceblue;
+  height: 100px;
+  text-align: right;
+  overflow: auto;
+  max-width: 350px; /* Set maximum width */
+  overflow: hidden;
+}
