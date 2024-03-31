@@ -21,7 +21,9 @@ button.forEach((element) => {
       input.innerText = e.target.textContent;
     } else {
       input.innerText += e.target.textContent;
-      console.log(e.target.textContent);
+    }
+     if (e.target.textContent !== "AC") {
+      ac.innerText = "C";
     }
     input.scrollLeft = input.scrollWidth;
   });
