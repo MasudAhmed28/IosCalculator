@@ -28,6 +28,9 @@ button.forEach((element) => {
      if (e.target.textContent !== "AC") {
       ac.innerText = "C";
     }
+    if (e.target.textContent !== "AC") {
+      ac.innerText = "C";
+    }
     input.scrollLeft = input.scrollWidth;
   });
 });
